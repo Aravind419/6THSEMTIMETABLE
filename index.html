@@ -7,14 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="#monday"></a>MONDAY<a href="#tuesday">TUESDAY</a><a href="#wednesday">WEDNESDAY</a><a href="#thursday">THURSDAY</a><a href="#friday">FRIDAY</a><a href="#saturday">SATURDAY</a>
-    </header>
+   
 <main>
+    <h1 class="top"><a href="#home">⤴️ </a></h1>
     
+    <section class="home" id="home">
+       
+        <div>
+
+            <h2>IT - DEPT TIME TABLE</h2>
+        <a href="#monday" >MONDAY</a>
+        <a href="#tuesday">TUESDAY</a>
+        <a href="#wednesday">WEDNESDAY</a>
+        <a href="#thursday">THURSDAY</a>
+        <a href="#friday">FRIDAY</a>
+        <a href="#saturday">SATURDAY</a>
+        <a href="#sunday">SUNDAY</a>
+
+        </div>
+       
+    </section>
+
+
+
     <section class="monday" id="monday">
         <h1>M <br>O <br>N<br>D <br>A <br>Y</h1>
 <table>
+   
     <tr>
         <th>Period</th>
         <th>Time</th>
@@ -67,6 +86,7 @@
     <section class="tuesday" id="tuesday">
         
         <table>
+           
     <tr>
         <th>Period</th>
         <th>Time</th>
@@ -308,7 +328,7 @@
 
     <tr><td>5</td>
     <td>12:45-1:35</td>
-    <td>IIE(Introduction to Industrial Engineering)td></td></tr>
+    <td>IIE(Introduction to Industrial Engineering)</td></tr>
 
     <tr><td>6</td>
     <td>1:36-2:25</td>
@@ -327,10 +347,29 @@
     </table>
       <h1>S <br>A <br>T<br>U <br>R <br>D <br>A <br>Y</h1>
     </section>
-    <section class="sunday">
+    <section class="sunday" >
          <h2 id="sunday">S <br>U<br>N<br>D <br>A <br>Y</h2>
-        <h2>HOLIDAY</h2>
+        <h2>HOLIDAY 😍 </h2>
     </section>
+    </section>
+
+    <section class="contact">
+        <form action="" method="post">
+<h3>Contact us</h3>
+            <label for="name">Name :</label> 
+            <input type="text" name="Name" placeholder="Enter Name" required>
+
+            <label for="phone">Phone :</label>
+            <input type="number" name="number" id="number" placeholder="Enter Number" required>
+
+            <label for="email">Email :</label>
+            <input type="email" name="Email" placeholder="Email">
+
+            <label for="purpose">Purpose :</label>
+            <textarea name="purpose" id="purpose" placeholder="Purpose" rows="5"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
     </section>
 </main>
 </body>

@@ -3,6 +3,10 @@ body{
     padding: 0;
       background: linear-gradient(310deg, rgb(84, 225, 69),#db09ad);
 }
+html {
+    scroll-behavior: smooth;
+}
+
 .monday{
     display: flex;
     justify-content: center;

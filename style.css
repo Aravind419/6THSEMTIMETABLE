@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+      background: linear-gradient(310deg, rgb(84, 225, 69),#db09ad);
+}
+.monday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+
+h1{
+    margin: 0 auto;
+}
+ table {
+            border-collapse: collapse;
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .break{
+            height: 10px;
+                            background: linear-gradient(135deg, rgb(70, 226, 62),#f85454);
+
+        }
+
+        .tuesday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+.wednesday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+.thursday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+.friday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+.saturday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+.sunday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgb(39, 165, 255),#ffffff);
+}
+#sunday{
+    margin: 0 2rem;
+    color: #333;
+    padding: 0;
+}

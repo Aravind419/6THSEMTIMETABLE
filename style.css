@@ -142,6 +142,7 @@ a {
 .contact form label{
     font-weight: bold;
     text-align: left;
+   margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
@@ -152,12 +153,21 @@ flex: none;
     padding: 1rem;
     border-radius: 10px;
     margin-bottom: 5px;
-    background: linear-gradient(135deg,#e2e953,#efefef);
+    background: linear-gradient(135deg,#f8f354,#efefef);
     border-color: #f8f354;
     border: none;
     min-width: 400px;
 }
 
+.contact form textarea:hover{
+  background:linear-gradient(135deg,#efefef,#f8f354);
+  transition: 0.8s ease-in;
+}
+
+.contact form input:hover{
+  background:linear-gradient(135deg,#efefef,#f8f354);
+  transition: 0.8s ease-in;
+}
 .contact form button{
     font-weight: bold;
     padding: 1rem;
@@ -165,6 +175,14 @@ flex: none;
     font-family: 1.1rem;
     background: linear-gradient(135deg,#f8f354,#f8f7f7);
     min-width: 400px;
+}
+.contact form button:hover{
+  background: linear-gradient(135deg,#f8f7f7,#f8f354);
+  transition: .3s linear;
+}
+
+.contact h3{
+  font-size: 2rem;
 }
 
 @keyframes fade {

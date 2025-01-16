@@ -49,6 +49,7 @@ a {
 
 .top{
     position:fixed;
+   align-items: right;
     z-index: 100;
  text-shadow:3px 3px 5px rgb(53, 177, 255);
    animation: fade 1s linear infinite;

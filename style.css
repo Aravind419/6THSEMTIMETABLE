@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(310deg, rgb(84, 225, 69), #db09ad);
+  box-sizing: border-box;
+  
 }
 html {
   scroll-behavior: smooth;
@@ -42,9 +44,7 @@ td {
   height: 10px;
   background: linear-gradient(135deg, rgb(226, 62, 62), #f8f354);
 }
-a {
-  text-decoration: none;
-}
+
 
 .top {
   position: fixed;
@@ -58,7 +58,14 @@ section {
   min-width: 100vw;
   overflow-x: hidden;
 }
-.home div {
+
+a{
+  text-decoration: none;
+}
+
+
+
+ .home div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +73,7 @@ section {
   min-height: 100vh;
   min-width: 100%;
   animation: start 1s linear;
+  
   background: linear-gradient(130deg, rgb(255, 245, 60), #c51dc5);
 }
 
@@ -77,14 +85,18 @@ section {
   letter-spacing: 3px;
   background: linear-gradient(200deg, rgb(242, 255, 0));
   border: 2px solid transparent;
+  
   animation: start 2s linear;
 }
 .home div a:hover {
-  border: 2px soild #f8f7f7;
-  letter-spacing: 3px;
-  color: #db09ad;
-  transition: 0.3s linear;
+text-decoration:dotted underline rgb(14, 14, 9);
+transform: scale(10px);
+  letter-spacing: 5px;
+  color: #000000;
+  transition: 0.5s linear;
 }
+
+
 
 .tuesday {
   display: flex;

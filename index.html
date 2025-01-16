@@ -22,7 +22,7 @@
         <a href="#thursday">THURSDAY</a>
         <a href="#friday">FRIDAY</a>
         <a href="#saturday">SATURDAY</a>
-        <a href="#sunday1">SUNDAY</a>
+        <a href="#sunday">SUNDAY</a>
 
         </div>
        
@@ -347,8 +347,8 @@
     </table>
       <h1>S <br>A <br>T<br>U <br>R <br>D <br>A <br>Y</h1>
     </section>
-    <section class="sunday1" >
-         <h2 id="sunday">S <br>U<br>N<br>D <br>A <br>Y</h2>
+    <section class="sunday"  id="sunday">
+         <h2>S <br>U<br>N<br>D <br>A <br>Y</h2>
         <h2>HOLIDAY 😍 </h2>
     </section>
     </section>
@@ -373,5 +373,17 @@
         </form>
     </section>
 </main>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch(error => {
+            console.error('Service Worker registration failed:', error);
+        });
+    }
+</script>
+
 </body>
 </html>

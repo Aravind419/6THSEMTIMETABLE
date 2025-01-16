@@ -247,6 +247,9 @@ textarea {
   html{
     font-family: 'Roboto', sans-serif;
   }
+ .hide{
+  display: none;
+ }
 
 }
 

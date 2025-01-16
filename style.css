@@ -276,16 +276,25 @@ textarea {
 
 //scrollbar
 /* Custom scrollbar for all elements */
+/* For the entire page or scrollable elements */
+html, body {
+    height: 100%;
+    overflow: auto; /* Ensures scrollbars appear when content overflows */
+}
+
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
+    width: 12px; /* Width of vertical scrollbar */
+    height: 1px; /* Height of horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, yellow, purple); /* Scrollbar thumb color (yellow to purple gradient) */
-    border-radius: 5px; /* Rounded edges */
+    background: linear-gradient(to bottom, yellow, rgb(255, 59, 255)); /* Gradient color for thumb */
+    border-radius: 6px; /* Smooth, rounded corners */
+    border: 2px solid #ffffff; /* Optional: Adds padding effect */
 }
 
 ::-webkit-scrollbar-track {
-    background: #0c0b0b; /* Background of the scrollbar track */
-    border-radius: 5px; /* Rounded edges */
+    background: #f0f0f0; /* Track background color */
+    border-radius: 0px; /* Smooth, rounded corners */
 }

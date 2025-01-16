@@ -52,6 +52,7 @@ td {
   z-index: 100;
   text-shadow: 3px 3px 5px rgb(53, 177, 255);
   animation: fade 1s linear infinite;
+
 }
 
 section {
@@ -83,13 +84,18 @@ a{
   color: #ffffff;
   font-weight: 900;
   letter-spacing: 3px;
+     transition: 1s ease-in;
   background: linear-gradient(200deg, rgb(242, 255, 0));
-  border: 2px solid transparent;
+ 
   
   animation: start 2s linear;
 }
+
+.home div a:invalid{
+  color: red;
+}
 .home div a:hover {
-text-decoration:dotted underline rgb(14, 14, 9);
+text-decoration:dotted underline rgb(255, 76, 231);
 transform: scale(10px);
   letter-spacing: 5px;
   color: #000000;
@@ -182,16 +188,17 @@ textarea {
   border-color: #f8f354;
   border: none;
   width: 300px;
+  transition: 5s ease-in ;
 }
 
 .contact form textarea:hover {
   background: linear-gradient(135deg, #efefef, #f8f354);
-  transition: 0.8s ease-in;
+  transition: 0.8s ease-in-out;
 }
 
 .contact form input:hover {
   background: linear-gradient(135deg, #efefef, #f8f354);
-  transition: 0.8s ease-in;
+  transition: 5s ease-in;
 }
 .contact form button {
   font-weight: bold;
@@ -228,6 +235,11 @@ textarea {
     margin: 0 auto;
     animation: fade 3s ease-in 2;
   }
+
+  .top{
+  
+    display: none;
+  }
 }
 
 
@@ -259,4 +271,21 @@ textarea {
   100% {
     opacity: 1;
   }
+}
+
+
+//scrollbar
+/* Custom scrollbar for all elements */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, yellow, purple); /* Scrollbar thumb color (yellow to purple gradient) */
+    border-radius: 5px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-track {
+    background: #0c0b0b; /* Background of the scrollbar track */
+    border-radius: 5px; /* Rounded edges */
 }

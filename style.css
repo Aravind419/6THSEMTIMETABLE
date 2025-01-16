@@ -7,8 +7,9 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  font-family: "Courier New", Courier, monospace;
+  font-family:cursive
 }
+
 
 .monday {
   display: flex;
@@ -203,6 +204,8 @@ textarea {
 .contact form button {
   font-weight: bold;
   padding: 1rem;
+   border: none;
+  
   border-radius: 10px;
   font-family: 1.1rem;
   background: linear-gradient(135deg, #f8f354, #f8f7f7);
@@ -211,6 +214,7 @@ textarea {
 .contact form button:hover {
   background: linear-gradient(135deg, #f8f7f7, #f8f354);
   transition: 0.3s linear;
+  cursor: pointer;
 }
 
 .contact h3 {

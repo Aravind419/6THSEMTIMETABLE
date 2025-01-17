@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Timetable</title>
     <link rel="stylesheet" href="style.css">
-
+  
     
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FB5FTGYR8L"></script>
@@ -22,7 +22,7 @@
 <main>
     <h1 class="top"><a href="#home">⤴️ </a></h1>
     
-    <section class="home" id="home">
+    <section class="home" id="home" >
       
        
      
@@ -45,9 +45,9 @@
 
 
 
-    <section class="monday" id="monday">
+    <div class="monday"  class="container" id="monday-table" >
         
-        <h1>M <br>O <br>N<br>D <br>A <br>Y</h1>
+        <p class="day">MONDAY</p>
 <table>
    
     <tr>
@@ -98,9 +98,9 @@
 </table>
 
 <!--Tuesday Time Table-->
-    </section>
-    <section class="tuesday" id="tuesday">
-        
+</div>
+    <div class="tuesday" id="tuesday-table" class="table-container">
+        <p class="day">TUESDAY</p>
         <table>
            
     <tr>
@@ -149,12 +149,12 @@
     <td>3:26-4:15</td>
     <td>3D(3D Printing and Design)</td></tr>
 </table>
- <h1>T <br>U <br>E<br>S <br>D <br>A <br>Y</h1>
+ 
 
-<!--WEDNESDAY-->
-    </section>
-    <section class="wednesday" id="wednesday">
-        <h1>W <br>E <br>D<br>N <br>E <br>S <br>D <br>A <br>Y</h1>
+
+</div>
+    <div class="wednesday" id="wednesday-table" class="table-container">
+        <p class="day">WEDNESDAY</p>
             <table>
     <tr>
         <th>Period</th>
@@ -202,11 +202,11 @@
     <td>3:26-4:15</td>
     <td>LAB--></td></tr>
     </table>
-    </section>
+</div>
 
     <!--THURSDAY-->
-    <section class="thursday" id="thursday">
-       
+    <div class="thursday" id="thursday-table" class="table-container">
+       <p class="day">THURSDAY</p>
                 <table>
     <tr>
         <th>Period</th>
@@ -254,14 +254,14 @@
     <td>3:26-4:15</td>
     <td>OOSE(Object Oriented Software Engineering)</td></tr>
     </table>
-     <h1>T <br>H <br>U<br>R <br>S <br>D <br>A <br>Y</h1>
-    </section>
+     
+</div>
 
 
 
 <!--FRIDAY-->
-    <section class="friday" id="friday">
-         <h1>F <br>R <br>I<br>D <br>A <br>Y</h1>
+    <div class="friday"  id="friday-table" class="table-container">
+         <p class="day">FRIDAY</p>
                    <table>
     <tr>
         <th>Period</th>
@@ -309,11 +309,11 @@
     <td>3:26-4:15</td>
     <td>LAB--></td></tr>
     </table>
-    </section>
+</div>
 
     <!--SATURDAY-->
-    <section class="saturday" id="saturday">
-       
+    <div class="saturday" id="saturday-table" class="table-container">
+       <p class="day"SATURDAY></p>
                          <table>
     <tr>
         <th>Period</th>
@@ -361,13 +361,13 @@
     <td>3:26-4:15</td>
     <td>M&A(Multimedia and Animation)</td></tr>
     </table>
-      <h1>S <br>A <br>T<br>U <br>R <br>D <br>A <br>Y</h1>
-    </section>
-    <section class="sunday" id="sunday" >
+      
+</div>
+    <div class="sunday" id="sunday-table" class="table-container" >
          <h2 id="sunday1">S <br>U<br>N<br>D <br>A <br>Y</h2>
         <h2>HOLIDAY 😍 </h2>
-    </section>
-    </section>
+    </div>
+</div>
 
     <section class="contact">
         <form action="https://formspree.io/f/mbllbpad" method="post">
@@ -391,7 +391,7 @@
        
     </section>
 </main>
-  
+
 <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js')
@@ -402,7 +402,11 @@
             console.error('Service Worker registration failed:', error);
         });
     }
-</script>
+   
 
+
+
+</script>
+<script src="script.js"></script>
 </body>
 </html>

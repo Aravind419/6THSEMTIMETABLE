@@ -69,7 +69,7 @@ function updateCountdown() {
 
   if (!found) {
     document.getElementById("countdown").textContent =
-      "No ongoing class at the moment.";
+      "Break Time";
   }
 }
 

@@ -244,13 +244,13 @@ textarea {
 
 @media (max-width: 768px) {
   table{
-    min-height: 90vh;
+    min-height: 0vh;
     min-width: 85vw;
   }
   th,
   td {
     border: 1px solid #333;
-    padding: 1px;
+    padding: 5px;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
   }

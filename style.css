@@ -7,7 +7,8 @@ body {
 }
 html {
   scroll-behavior: smooth;
-  font-family:cursive
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 //countdown
 header{
@@ -20,7 +21,7 @@ header{
 color: #fffc52;
 background-color: #000000;
 margin-bottom: 10px;
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 
 }
@@ -51,7 +52,7 @@ margin-bottom: 10px;
 }
 table {
   border-collapse: collapse;
-  width: 70%;
+  width: 100%;
  animation: start 1s ease-in-out;
   margin: 20px auto;
 }

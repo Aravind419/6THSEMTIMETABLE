@@ -53,7 +53,7 @@ font-size: 1.2rem;
 }
 table {
   border-collapse: collapse;
-  min-width: 100%;
+width: 98%;
  animation: start 1s ease-in-out;
   margin: 20px auto;
 }

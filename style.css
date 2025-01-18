@@ -1,30 +1,40 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #040404;
+  background:linear-gradient(200deg,#191919,#fff);
   box-sizing: border-box;
-
+  
 }
+
+
 html {
   scroll-behavior: smooth;
+  
    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 //countdown
-header{
-  margin: 0;
-  border: 0px;
-  position: fixed;
-  background-color: #000000;
+header  {
+  
+ 
+ 
+
+ 
+
+ justify-content:space-between;  
 }
+
+
+
+
 #countdown {
-color: #ffff00;
-background-color: #000000;
+color: #fcfc5e;
+background:linear-gradient(-200deg,#191919);
 margin-bottom: 10px;
 text-align: center;
 font-size: 1.2rem;
 font-weight: 700;
-text-shadow:2px 1px 2px#ff649d;
+text-shadow:2px 1px 2px#2b3b38;
 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -184,8 +194,9 @@ transform: scale(10px);
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(-200deg, rgb(255, 255, 73), #fffff8);
+  background: linear-gradient(-200deg, rgb(112, 255, 121), hsl(289, 95%, 69%));
   min-width: 100%;
+  
 }
 .sunday {
   display: flex;
@@ -196,11 +207,7 @@ transform: scale(10px);
   background: linear-gradient(200deg, rgb(255, 255, 255), #fff82d);
   min-width: 100%;
 }
-#sunday1 {
-  margin: 0 2rem;
-  color: #333;
-  padding: 0;
-}
+
 
 .contact form {
   display: flex;
@@ -369,7 +376,7 @@ html, body {
 
 
 //download Page
- @keyframes fadeIn {
+ {@keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }

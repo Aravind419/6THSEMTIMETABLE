@@ -1,3 +1,14 @@
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("/service-worker.js")
+    .then((registration) => {
+      console.log("Service Worker registered with scope:", registration.scope);
+    })
+    .catch((error) => {
+      console.error("Service Worker registration failed:", error);
+    });
+}
+
 const days = [
   "sunday",
   "monday",
@@ -12,7 +23,6 @@ const currentDayId = `${days[today]}-table`;
 
 // Highlight the current day's table
 document.getElementById(currentDayId).classList.add("active-day");
-
 
 //countdown
 function updateCountdown() {
@@ -68,13 +78,9 @@ function updateCountdown() {
   });
 
   if (!found) {
-    document.getElementById("countdown").textContent =
-      "Break Time";
+    document.getElementById("countdown").textContent = "Break Time";
   }
 }
 
 // Update countdown every second
 setInterval(updateCountdown, 1000);
-
-
-

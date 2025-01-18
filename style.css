@@ -1,41 +1,47 @@
 body {
   margin: 0;
   padding: 0;
-  background:linear-gradient(200deg,#191919,#fff);
+  background: linear-gradient(200deg, #191919, #fff);
   box-sizing: border-box;
-  
 }
-
 
 html {
   scroll-behavior: smooth;
-  
-   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 //countdown
-header  {
-  
- 
- 
-
- 
-
- justify-content:space-between;  
+/* header  {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 2px;
+}
+header nav{
+  display: flex;
+justify-content: space-between;
+margin-left: 20px;
 }
 
-
-
-
+header nav ul{
+  display: flex;
+  list-style: none;
+  
+  color: #fff;
+  
+}
+header nav ul li{
+  margin: 0 10px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #f0f0f0;
+}
+header nav ul li a{
+  color: #fff;
+} */
 #countdown {
-color: #fcfc5e;
-background:linear-gradient(-200deg,#191919);
-margin-bottom: 10px;
-text-align: center;
-font-size: 1.2rem;
-font-weight: 700;
-text-shadow:2px 1px 2px#2b3b38;
-font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .monday {
@@ -49,31 +55,31 @@ font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ox
 }
 
 .day {
- margin: 1px;
- text-align: center;
- font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- font-size: 1.2rem;
- font-weight: 900;
- letter-spacing: 1px;
+  margin-top: 2px;
+  top: 60px;
+
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
 }
-.day:hover{
+.day:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
   letter-spacing: 2px;
- 
 }
 table {
   border-collapse: collapse;
-width: 98%;
- animation: start 1s ease-in-out;
+  width: 98%;
+  animation: start 1s ease-in-out;
   margin: 20px auto;
   text-align: left;
+  
 }
 
 //staf details
-    /* Popup background */
-
-
+/* Popup background */
 
 tr:hover {
   transform: scale(20px);
@@ -91,7 +97,6 @@ td {
   background: linear-gradient(135deg, rgb(226, 62, 62), #f8f354);
 }
 
-
 .top {
   position: fixed;
   display: none;
@@ -99,7 +104,6 @@ td {
   z-index: 100;
   text-shadow: 3px 3px 5px rgb(53, 177, 255);
   animation: fade 1s linear infinite;
-
 }
 
 /* div {
@@ -107,10 +111,9 @@ td {
   overflow-x: hidden;
 } */
 
-a{
+a {
   text-decoration: none;
 }
-
 
 /* 
  .home div {
@@ -150,7 +153,6 @@ transform: scale(10px);
 }
  */
 
-
 .tuesday {
   display: flex;
   display: none;
@@ -185,7 +187,7 @@ transform: scale(10px);
   align-items: center;
   min-height: 100vh;
   background: linear-gradient(135deg, rgb(255, 246, 75), #fbe7e7);
-  
+
   min-width: 100%;
 }
 .saturday {
@@ -196,7 +198,6 @@ transform: scale(10px);
   min-height: 100vh;
   background: linear-gradient(-200deg, rgb(112, 255, 121), hsl(289, 95%, 69%));
   min-width: 100%;
-  
 }
 .sunday {
   display: flex;
@@ -207,7 +208,6 @@ transform: scale(10px);
   background: linear-gradient(200deg, rgb(255, 255, 255), #fff82d);
   min-width: 100%;
 }
-
 
 .contact form {
   display: flex;
@@ -239,7 +239,7 @@ textarea {
   border-color: #f8f354;
   border: none;
   width: 300px;
-  transition: 5s ease-in ;
+  transition: 5s ease-in;
 }
 
 .contact form textarea:hover {
@@ -254,8 +254,8 @@ textarea {
 .contact form button {
   font-weight: bold;
   padding: 1rem;
-   border: none;
-  
+  border: none;
+
   border-radius: 10px;
   font-family: 1.1rem;
   background: linear-gradient(135deg, #f8f354, #f8f7f7);
@@ -271,10 +271,8 @@ textarea {
   font-size: 2rem;
 }
 
-
-
 @media (max-width: 768px) {
-  table{
+  table {
     min-height: 80vh;
     min-width: 85vw;
     animation: start 1s ease-in-out;
@@ -291,22 +289,17 @@ textarea {
     animation: fade 3s ease-in 2;
   }
 
-  .top{
-  
+  .top {
     display: none;
   }
-  html{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  html {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
- .hide{
-  display: none;
- }
-
+  .hide {
+    display: none;
+  }
 }
-
-
-
-
 
 @keyframes fade {
   0% {
@@ -337,98 +330,204 @@ textarea {
 
 //table hide
 
-.container{
-      display: none;
-    }
-    .active-day {
-      display: block;
-    }
+.container {
+  display: none;
+}
+.active-day {
+  display: block;
+}
 
-    .home{
-      display: none;
-    }
-
+.home {
+  display: none;
+}
 
 //scrollbar
 /* Custom scrollbar for all elements */
 /* For the entire page or scrollable elements */
-html, body {
-    height: 100%;
-    overflow: auto; /* Ensures scrollbars appear when content overflows */
+html,
+body {
+  height: 100%;
+  overflow: auto; /* Ensures scrollbars appear when content overflows */
 }
 
 /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of vertical scrollbar */
-    height: 1px; /* Height of horizontal scrollbar */
+  width: 12px; /* Width of vertical scrollbar */
+  height: 1px; /* Height of horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, yellow, rgb(255, 59, 255)); /* Gradient color for thumb */
-    border-radius: 6px; /* Smooth, rounded corners */
-    border: 2px solid #ffffff; /* Optional: Adds padding effect */
+  background: linear-gradient(
+    to bottom,
+    yellow,
+    rgb(255, 59, 255)
+  ); /* Gradient color for thumb */
+  border-radius: 6px; /* Smooth, rounded corners */
+  border: 2px solid #ffffff; /* Optional: Adds padding effect */
 }
 
 ::-webkit-scrollbar-track {
-    background: #f0f0f0; /* Track background color */
-    border-radius: 0px; /* Smooth, rounded corners */
+  background: #f0f0f0; /* Track background color */
+  border-radius: 0px; /* Smooth, rounded corners */
+}
+
+//download Page
+ {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .app-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    height: 450px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .app-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .app-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .app-card h2 {
+    margin: 15px;
+    font-size: 1.5rem;
+    color: #ff0055;
+  }
+
+  .app-card p {
+    margin: 0 15px 15px;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .download-btn {
+    display: block;
+    margin: 15px;
+    padding: 10px 20px;
+    background: #ff0055;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .download-btn:hover {
+    background: rgb(255, 63, 239);
+    transform: 0.3s ease-in-out;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1px 20px;
+  
+}
+
+.navbar .logo {
+  color: #fcfc5e;
+  background: linear-gradient(-200deg, #191919);
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-shadow: 2px 1px 2px#2b3b38;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+   border-bottom: 2px;
+  
+}
+.navbar .nav-links a:hover {
+ border-bottom:2px solid #fffc4f;
+ color: #b6f148;
+ transition: .3s ease-in-out;;
+ 
+
+}
+.navbar .menu-icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .nav-links.show {
+    display: flex;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+  }
+  .navbar .logo {
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nav-btn {
+ 
+  background-color: #c51dc5;
+}
 }
 
 
-//download Page
- {@keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .app-card {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            overflow: hidden;
-            width: 300px;
-            height: 450px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .app-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .app-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .app-card h2 {
-            margin: 15px;
-            font-size: 1.5rem;
-            color: #ff0055;
-        }
-
-        .app-card p {
-            margin: 0 15px 15px;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        .download-btn {
-            display: block;
-            margin: 15px;
-            padding: 10px 20px;
-            background: #ff0055;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1.2rem;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-
-        .download-btn:hover {
-            background: rgb(255, 63, 239);
-            transform: 0.3s ease-in-out;
-        }
-
+.nav-btn {
+  background-color: #093ea6;
+  color: rgb(3, 3, 3);
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px 15px;
+}
+.nav-btn:hover {
+  background-color: #4880f1;
+  cursor: pointer;
+  transform: translatey(-2px);
+}

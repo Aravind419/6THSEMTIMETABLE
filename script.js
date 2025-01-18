@@ -84,3 +84,10 @@ function updateCountdown() {
 
 // Update countdown every second
 setInterval(updateCountdown, 1000);
+
+
+//menu for mobile 
+function toggleMenu() {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("show");
+}

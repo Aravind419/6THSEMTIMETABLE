@@ -19,6 +19,7 @@
 </head>
 <body>
     <header>
+        
                    <p id="countdown" ></p>
 
     </header>
@@ -48,7 +49,7 @@
 
 
 
-    <div class="monday"  class="container" id="monday-table" >
+    <section class="monday"  class="container" id="monday-table" >
         
         <p class="day">MONDAY</p>
 <table>
@@ -101,8 +102,8 @@
 </table>
 
 <!--Tuesday Time Table-->
-</div>
-    <div class="tuesday" id="tuesday-table" class="table-container">
+</section>
+    <section class="tuesday" id="tuesday-table" class="table-container">
         <p class="day">TUESDAY</p>
         <table>
            
@@ -155,8 +156,8 @@
  
 
 
-</div>
-    <div class="wednesday" id="wednesday-table" class="table-container">
+</section>
+    <section class="wednesday" id="wednesday-table" class="table-container">
         <p class="day">WEDNESDAY</p>
             <table>
     <tr>
@@ -205,10 +206,10 @@
     <td>3:26-4:15</td>
     <td>LAB--></td></tr>
     </table>
-</div>
+</section>
 
     <!--THURSDAY-->
-    <div class="thursday" id="thursday-table" class="table-container">
+    <section class="thursday" id="thursday-table" class="table-container">
        <p class="day">THURSDAY</p>
                 <table>
     <tr>
@@ -258,23 +259,31 @@
     <td>OOSE(Object Oriented Software Engineering)</td></tr>
     </table>
      
-</div>
+</section>
 
 
 
 <!--FRIDAY-->
-    <div class="friday"  id="friday-table" class="table-container">
+    <section class="friday"  id="friday-table" class="table-container">
         <p class="day">FRIDAY</p>
           
 
                    <table>
                     
+   <thead>
     <tr>
-        <th>Period</th>
-        <th>Time</th>
-        <th>Subject</th>
+      <th>Period</th>
+      <th>Time</th>
+      <th>Subject</th>
     </tr>
-    <tr id="period-1"><td>1</td>
+  </thead>
+  <tbody>
+    <tr id="period-1" class="subject-row" 
+        data-subject-name="Multimedia and Animation" 
+        data-teacher-name="Prof. John Doe" 
+        data-teacher-contact="johndoe@example.com" 
+        data-classroom-location="Room 101" 
+        data-resource-link="https://example.com/multimedia"><td>1</td>
     <td>8:45-9:35</td>
     <td>M&A(Multimedia and Animation)</td></tr>
 
@@ -314,12 +323,13 @@
     <tr id="period-8"><td>8</td>
     <td>3:26-4:15</td>
     <td>LAB--></td></tr>
+    </tbody>
     </table>
-</div>
-
+</section>
+ 
     <!--SATURDAY-->
-    <div class="saturday" id="saturday-table" class="table-container">
-       <p class="day"SATURDAY></p>
+    <section class="saturday" id="saturday-table" class="table-container">
+       <p class="day">SATURDAY</p>
                          <table>
     <tr>
         <th>Period</th>
@@ -368,11 +378,12 @@
     <td>M&A(Multimedia and Animation)</td></tr>
     </table>
       
-</div>
-    <div class="sunday" id="sunday-table" class="table-container" >
+</section>
+
+    <section class="sunday" id="sunday-table" class="table-container" >
          <h2 id="sunday1">S <br>U<br>N<br>D <br>A <br>Y</h2>
         <h2>HOLIDAY 😍 </h2>
-    </div>
+    </section>
 </div>
 
     <section class="contact">
@@ -396,6 +407,7 @@
         </form>
        
     </section>
+  
 </main>
 
 <script>

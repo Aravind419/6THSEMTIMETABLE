@@ -1,4 +1,4 @@
-<script>
+
   const topButton = document.getElementById('top');
 
   // Show the button when scrolling down
@@ -15,4 +15,12 @@
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-</script>
+
+
+//print section 
+// Function to trigger print with watermark
+function printPage() {
+  window.print();
+}
+
+ 

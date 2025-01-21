@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Download </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #ff0055;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        main {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .app-card h2 {
+            margin: 15px;
+            font-size: 1.5rem;
+            color: #ff0055;
+        }
+
+        .app-card p {
+            margin: 0 15px 15px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .download-btn {
+            display: block;
+            margin: 15px;
+            padding: 10px 20px;
+            background: #ff0055;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: rgb(255, 63, 239);
+            transform: 0.3s ease-in-out;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>App Download Page</h1>
+    </header>
+
+    <main>
+        <!-- Example app card -->
+        <!-- <div class="app-card">
+            <img src="https://via.placeholder.com/300x200" alt="App 1 Logo">
+            <h2>App 1</h2>
+            <p>Amazing app for all your needs. Fast, reliable, and easy to use.</p>
+            <a href="#" class="download-btn">Download APK</a>
+        </div> -->
+
+        <div class="app-card">
+            <img src="timetable.png" alt="App 2 Logo">
+            <h2>6th sem - IT Time Table</h2>
+            <p>Experience seamless performance with our innovative app.</p>
+            <a href="ittimetable.apk" class="download-btn">Download App</a>
+        </div>
+
+        <!-- <div class="app-card">
+            <img src="https://via.placeholder.com/300x200" alt="App 3 Logo">
+            <h2>App 3</h2>
+            <p>Stay productive and organized with this top-notch app.</p>
+            <a href="#" class="download-btn">Download APK</a>
+        </div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 App Download Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>

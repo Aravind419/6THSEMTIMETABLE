@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(310deg, rgb(84, 225, 69), #db09ad);
+  box-sizing: border-box;
+  
+}
+html {
+  scroll-behavior: smooth;
+  font-family:cursive
+}
+
+
+.monday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(255, 233, 39), #ffffff);
+  min-width: 100vw;
+}
+
+h1 {
+  margin: 0 auto;
+  animation: fade 3s ease-in 2;
+}
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 20px auto;
+}
+
+tr:hover {
+  transform: scale(20px);
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.break {
+  height: 10px;
+  background: linear-gradient(135deg, rgb(226, 62, 62), #f8f354);
+}
+
+
+#top {
+      position: fixed;      /* Keeps it in place while scrolling */
+      bottom: 20px;         /* Distance from the bottom */
+      right: 20px;          /* Distance from the right */
+      font-size: 20px;      /* Adjust icon size */
+      background-color: #007BFF; /* Button background color */
+      color: white;         /* Icon color */
+      text-decoration: none; /* Remove underline */
+      padding: 10px;        /* Add some padding */
+      border-radius: 50%;   /* Make it circular */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+      transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    #top:hover {
+      transform: scale(1.2); /* Slight zoom-in effect on hover */
+      background-color: #0056b3; /* Darker shade on hover */
+    }
+
+section {
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+ .home div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100%;
+  animation: start 1s linear;
+  
+  background: linear-gradient(130deg, rgb(255, 245, 60), #c51dc5);
+}
+
+.home div a {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: 3px;
+     transition: 1s ease-in;
+  background: linear-gradient(200deg, rgb(242, 255, 0));
+ 
+  
+  animation: start 2s linear;
+}
+
+.home div a:invalid{
+  color: red;
+}
+.home div a:hover {
+text-decoration:dotted underline rgb(255, 76, 231);
+transform: scale(10px);
+  letter-spacing: 5px;
+  color: #000000;
+  transition: 0.5s linear;
+}
+
+
+
+.tuesday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(255, 53, 238), #ffffff);
+  min-width: 100%;
+}
+.wednesday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(93, 255, 39), hsl(0, 0%, 100%));
+  min-width: 100%;
+}
+.thursday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(59, 239, 246), #ffffff);
+  min-width: 100%;
+}
+.friday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgb(255, 230, 39), #ffffff);
+  min-width: 100%;
+}
+.saturday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-200deg, rgb(255, 255, 73), #fffff8);
+  min-width: 100%;
+}
+.sunday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(200deg, rgb(255, 255, 255), #fff82d);
+  min-width: 100%;
+}
+#sunday1 {
+  margin: 0 2rem;
+  color: #333;
+  padding: 0;
+}
+
+.contact form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(243, 246, 59), #ffffff);
+}
+
+.contact form label {
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+textarea {
+  flex: none;
+}
+.contact form input,
+.contact form textarea {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background: linear-gradient(135deg, #f8f354, #efefef);
+  border-color: #f8f354;
+  border: none;
+  width: 300px;
+  transition: 5s ease-in ;
+}
+
+.contact form textarea:hover {
+  background: linear-gradient(135deg, #efefef, #f8f354);
+  transition: 0.8s ease-in-out;
+}
+
+.contact form input:hover {
+  background: linear-gradient(135deg, #efefef, #f8f354);
+  transition: 5s ease-in;
+}
+.contact form button {
+  font-weight: bold;
+  padding: 1rem;
+   border: none;
+  
+  border-radius: 10px;
+  font-family: 1.1rem;
+  background: linear-gradient(135deg, #f8f354, #f8f7f7);
+  min-width: 300px;
+}
+.contact form button:hover {
+  background: linear-gradient(135deg, #f8f7f7, #f8f354);
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.contact h3 {
+  font-size: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+  table{
+    min-height: 90vh;
+    min-width: 85vw;
+  }
+  th,
+  td {
+    border: 1px solid #333;
+    padding: 1px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  h1 {
+    margin: 0 auto;
+    animation: fade 3s ease-in 2;
+  }
+
+  .top{
+  float: right;
+    display: visible;
+  }
+  html{
+    font-family: 'Roboto', sans-serif;
+  }
+ .hide{
+  display: visible;
+ }
+
+}
+
+
+
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    color: chartreuse;
+  }
+  50% {
+    transition: 30s linear;
+    color: #c51dc5;
+  }
+  60% {
+    color: aqua;
+  }
+  100% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+//scrollbar
+/* Custom scrollbar for all elements */
+/* For the entire page or scrollable elements */
+html, body {
+    height: 100%;
+    overflow: auto; /* Ensures scrollbars appear when content overflows */
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of vertical scrollbar */
+    height: 1px; /* Height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, yellow, rgb(255, 59, 255)); /* Gradient color for thumb */
+    border-radius: 6px; /* Smooth, rounded corners */
+    border: 2px solid #ffffff; /* Optional: Adds padding effect */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Track background color */
+    border-radius: 0px; /* Smooth, rounded corners */
+}
+
+
+//download Page
+ @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .app-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            height: 450px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .app-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .app-card h2 {
+            margin: 15px;
+            font-size: 1.5rem;
+            color: #ff0055;
+        }
+
+        .app-card p {
+            margin: 0 15px 15px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .download-btn {
+            display: block;
+            margin: 15px;
+            padding: 10px 20px;
+            background: #ff0055;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: rgb(255, 63, 239);
+            transform: 0.3s ease-in-out;
+        }

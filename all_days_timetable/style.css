@@ -404,7 +404,7 @@ html, body {
 /* Styles for the watermark during print */
 @media print {
   /* Watermark image */
-  table::after {
+  body::after {
     content: "";
     background: url('timetable.png') no-repeat center center; /* Ensure this is the correct path to the image */
     position: fixed;

@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #9af7ff, #8579f7, #fad0c4);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        button {
+            background: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ddd;
+        }
+        .steps {
+            margin-top: 20px;
+            text-align: left;
+            display: none;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease-in-out;
+        }
+        .steps.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container glass">
+        <h1>How to Use This Website</h1>
+        <video controls>
+            <source src="tutorial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="buttons">
+            <button onclick="downloadVideo()"><i class="fas fa-download"></i> Download</button>
+            <button onclick="shareVideo()"><i class="fas fa-share"></i> Share</button>
+        </div>
+        <div id="stepsContainer">
+            <h2>Step-by-Step Guide</h2>
+            <div class="steps">Step 1: Click on the Upload button.</div>
+            <div class="steps">Step 2: Choose your PDF or Image file.</div>
+            <div class="steps">Step 3: Click on Submit.</div>
+            <div class="steps">Step 4: Wait for the file to upload.</div>
+            <div class="steps">Step 5: View the uploaded file in the dashboard.</div>
+        </div>
+    </div>
+
+    <script>
+        function downloadVideo() {
+            alert("Downloading Video...");
+        }
+        function shareVideo() {
+            alert("Sharing Video...");
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const steps = document.querySelectorAll(".steps");
+            steps.forEach((step, index) => {
+                setTimeout(() => {
+                    step.classList.add("show");
+                }, index * 1000);
+            });
+        });
+    </script>
+</body>
+</html> -->
